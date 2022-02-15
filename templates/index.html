@@ -1,0 +1,28 @@
+<html>
+<body>
+<h3>Income Prediction Form</h3>
+
+<div>
+    <form action="/result" method="POST">
+        <label for="company"> Company </label>
+        <select id="company" name = "company">
+            <option value = 'IBM'>IBM</option>
+            <option value = 'other'>Other...</option>
+        </select>
+        <br>
+        <label for="predictor">Algorithm</label>
+        <select id="predictor" name="predictor">
+            <option value = 'arma'> ARMA </option>
+            <option value = 'other'>Other...</option>
+        </select>
+        <br>
+        <label for="start">Start Date:</label>
+        <input type="date" id="start" name="start">
+        <br>
+        <label for="end">End Date:</label>
+        <input type="date" id="end" name="end">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
